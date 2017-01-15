@@ -208,16 +208,16 @@ Guide_RM( 58 ) = { 1, 15, KEY_S, 0 };
 Guide_RM( 59 ) = { 1, 15, KEY_COMMA, 0 };
 Guide_RM( 60 ) = { 1, 15, KEY_7, 0 };
 Guide_RM( 61 ) = { 1, 15, KEY_4, 0 };
-Guide_RM( 62 ) = { 1, 12, 0 };
-Guide_RM( 63 ) = { 1, 15, KEY_8, 0 };
-Guide_RM( 64 ) = { 1, 15, KEY_BACKTICK, 0 };
-Guide_RM( 65 ) = { 1, 15, KEY_3, 0 };
-Guide_RM( 66 ) = { 1, 15, KEY_SEMICOLON, 0 };
-Guide_RM( 67 ) = { 1, 15, KEY_F9, 0 };
-Guide_RM( 68 ) = { 1, 15, KEY_F11, 0 };
-Guide_RM( 69 ) = { 1, 8, 234, 0, 0 };
-Guide_RM( 70 ) = { 1, 15, KEY_F12, 0 };
-Guide_RM( 71 ) = { 1, 15, KEY_F6, 0 };
+Guide_RM( 62 ) = { 1, 15, KEY_8, 0 };
+Guide_RM( 63 ) = { 1, 15, KEY_BACKTICK, 0 };
+Guide_RM( 64 ) = { 1, 15, KEY_3, 0 };
+Guide_RM( 65 ) = { 1, 15, KEY_SEMICOLON, 0 };
+Guide_RM( 66 ) = { 1, 15, KEY_F9, 0 };
+Guide_RM( 67 ) = { 1, 15, KEY_F11, 0 };
+Guide_RM( 68 ) = { 1, 8, 234, 0, 0 };
+Guide_RM( 69 ) = { 1, 15, KEY_F12, 0 };
+Guide_RM( 70 ) = { 1, 15, KEY_F6, 0 };
+Guide_RM( 71 ) = { 1, 12, 0 };
 Guide_RM( 72 ) = { 1, 8, 233, 0, 0 };
 Guide_RM( 73 ) = { 1, 2, 3, 15, 0, 0, 0 };
 Guide_RM( 74 ) = { 1, 2, 5, 0, 0, 0, 0 };
@@ -566,20 +566,20 @@ const TriggerMacro TriggerMacroList[] = {
 	Define_TM( 65, 35 ),
 	Define_TM( 66, 15 ),
 	Define_TM( 67, 61 ),
-	Define_TM( 68, 62 ),
-	Define_TM( 69, 63 ),
-	Define_TM( 70, 64 ),
+	Define_TM( 68, 36 ),
+	Define_TM( 69, 62 ),
+	Define_TM( 70, 63 ),
 	Define_TM( 71, 8 ),
 	Define_TM( 72, 17 ),
-	Define_TM( 73, 65 ),
-	Define_TM( 74, 66 ),
+	Define_TM( 73, 64 ),
+	Define_TM( 74, 65 ),
 	Define_TM( 75, 56 ),
-	Define_TM( 76, 67 ),
-	Define_TM( 77, 68 ),
-	Define_TM( 78, 69 ),
-	Define_TM( 79, 70 ),
-	Define_TM( 80, 71 ),
-	Define_TM( 81, 62 ),
+	Define_TM( 76, 66 ),
+	Define_TM( 77, 67 ),
+	Define_TM( 78, 68 ),
+	Define_TM( 79, 69 ),
+	Define_TM( 80, 70 ),
+	Define_TM( 81, 71 ),
 	Define_TM( 82, 72 ),
 	Define_TM( 83, 73 ),
 	Define_TM( 84, 74 ),

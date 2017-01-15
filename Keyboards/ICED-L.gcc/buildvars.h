@@ -34,15 +34,15 @@
 
 
 // Strings used in the CLI module
-#define CLI_Revision            "ea3be696209ee2179e21313bd76b166e0a0998f6"
+#define CLI_Revision            "1b7c1bcf10b18aa1becdbffcf51c688db030d1b6"
 #define CLI_Branch              "master"
 #define CLI_ModifiedStatus      "Dirty"
-#define CLI_ModifiedFiles       "\r\n\tKeyboards/ergodox.bash"
-#define CLI_RepoOrigin          "https://github.com/kiibohd/controller"
-#define CLI_CommitDate          "2017-01-01 16:17:18 -0800"
-#define CLI_CommitAuthor        "GitHub <noreply@github.com>"
+#define CLI_ModifiedFiles       "\r\n\tConfig_files_from_input_club/MDErgo1-Default-0.kll\r\n\tConfig_files_from_input_club/MDErgo1-Default.json\r\n\tConfig_files_from_input_club/kll/MDErgo1-Default-0.kll\r\n\tConfig_files_from_input_club/log/left_generatedKeymap.h\r\n\tConfig_files_from_input_club/log/left_kll_defs.h\r\n\tConfig_files_from_input_club/log/right_generatedKeymap.h\r\n\tConfig_files_from_input_club/log/right_kll_defs.h"
+#define CLI_RepoOrigin          "https://github.com/benoittgt/controller"
+#define CLI_CommitDate          "2017-01-15 13:34:43 +0100"
+#define CLI_CommitAuthor        "Benoit Tigeot <btigeot@octo.com>"
 #define CLI_Modules             "Scan(Infinity_Ergodox) Macro(PartialMap) Output(pjrcUSB) Debug(full)"
-#define CLI_BuildDate           "2017-01-15 13:18:31 +0100"
+#define CLI_BuildDate           "2017-01-15 13:37:46 +0100"
 #define CLI_BuildOS             "Generic"
 #define CLI_Arch                "arm"
 #define CLI_Chip                "mk20dx256vlh7"
@@ -56,5 +56,5 @@
 // match the INF file.
 #define VENDOR_ID               0x1C11
 #define PRODUCT_ID              0xB04D
-#define BCD_VERSION             503
+#define BCD_VERSION             506
 
