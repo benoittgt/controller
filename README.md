@@ -1,4 +1,4 @@
-The Kiibohd Controller
+The Kiibohd Controller :: Ergodox Miami Edition
 ======================
 
 Version with miami title in bitmap :
@@ -6,7 +6,30 @@ Version with miami title in bitmap :
 Image before being converted to bmp and converted to code :
 ![img](miami.png)
 
-After from project folder : `python3 Scan/Devices/STLcd/bitmap2Struct.py -f miami.bmp`
+### Result
+
+![](ergdox_photo_1.jpg)
+
+![](ergdox_photo_2.jpg)
+
+## TL;DR:
+Setup: https://github.com/kiibohd/controller/wiki#compiling-on-your-own
+Then:
+```sh
+git clone https://github.com/benoittgt/controller
+cd controller
+git checkout ergodox-miami-theme
+cd Keyboards/
+bash ergodox.bash
+# turn your right keyboard in flash mode. Folder name may be different
+cd darwin16.miami_ergodox_r.gcc.make/ && dfu-util -D kiibohd.dfu.bin && cd ../
+# turn your left keyboard in flash mode
+cd darwin16.miami_ergodox_l.gcc.make/ && dfu-util -D kiibohd.dfu.bin && cd ../
+```
+
+## How it's done
+
+From project folder : `python3 Scan/Devices/STLcd/bitmap2Struct.py -f miami.bmp`
 
 Copy the number to a kll file like into (kll/layouts/mine/ergodox_miami_logo_lcd.kll) with content like :
 
@@ -40,8 +63,6 @@ STLcdBacklightRed   = 0xA8A8;
 STLcdBacklightGreen = 0x2727;
 STLcdBacklightBlue  = 0x1FA0;
 ```
-
-![](miami_result.jpg)
 
 ## To Do
 
