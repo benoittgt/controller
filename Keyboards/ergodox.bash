@@ -7,7 +7,7 @@
 
 
 # Build the Left Side
-"${BASH_SOURCE%/*}/ergodox-l.bash"
+source "ergodox-l.bash"
 
 # Build the Right Side
-"${BASH_SOURCE%/*}/ergodox-r.bash"
+source "ergodox-r.bash"

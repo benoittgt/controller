@@ -6,7 +6,24 @@ Version with miami title in bitmap :
 Image before being converted to bmp and converted to code :
 ![img](miami.png)
 
-After from project folder : `python3 Scan/Devices/STLcd/bitmap2Struct.py -f miami.bmp`
+TL;DR:
+Setup: https://github.com/kiibohd/controller/wiki#compiling-on-your-own
+Then:
+```sh
+git clone https://github.com/benoittgt/controller
+cd controller
+git checkout ergodox-miami-theme 
+cd Keyboards/
+bash ergodox.bash
+# turn your right keyboard in flash mode. Folder name may be different
+cd darwin16.miami_ergodox_r.gcc.make/ && dfu-util -D kiibohd.dfu.bin && cd ../
+# turn your left keyboard in flash mode
+cd darwin16.miami_ergodox_l.gcc.make/ && dfu-util -D kiibohd.dfu.bin && cd ../
+```
+
+## How it's done
+
+From project folder : `python3 Scan/Devices/STLcd/bitmap2Struct.py -f miami.bmp`
 
 Copy the number to a kll file like into (kll/layouts/mine/ergodox_miami_logo_lcd.kll) with content like :
 
@@ -24,7 +41,7 @@ STLcdDefaultImage = "
 ";
 ```
 
-Reference it inside your bash script : https://github.com/benoittgt/controller/blob/master/Keyboards/ergodox.bash#L27
+Reference it inside your bash script : https://github.com/benoittgt/controller/blob/master/Keyboards/ergodox-l.bash#L27
 Also if you have special mapping from [configurator](https://input.club/configurator-ergodox/) drop your file in `kll/layouts/mine/`.
 
 Run the bash script `bash ergodox-r.bash` from `Keyboards` folder then `bash ergodox-l.bash` and go into each folder generated. In my case it's `Keyboards/darwin16.miami_ergodox_r.gcc.make/` and run `dfu-util -D kiibohd.dfu.bin` on each part of your keyboard in flash mode.
