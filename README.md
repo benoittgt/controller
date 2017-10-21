@@ -1,4 +1,4 @@
-The Kiibohd Controller
+The Kiibohd Controller :: Ergodox Miami Edition
 ======================
 
 Version with miami title in bitmap :
@@ -6,13 +6,19 @@ Version with miami title in bitmap :
 Image before being converted to bmp and converted to code :
 ![img](miami.png)
 
-TL;DR:
+### Result
+
+![](ergdox_photo_1.jpg)
+
+![](ergdox_photo_2.jpg)
+
+## TL;DR:
 Setup: https://github.com/kiibohd/controller/wiki#compiling-on-your-own
 Then:
 ```sh
 git clone https://github.com/benoittgt/controller
 cd controller
-git checkout ergodox-miami-theme 
+git checkout ergodox-miami-theme
 cd Keyboards/
 bash ergodox.bash
 # turn your right keyboard in flash mode. Folder name may be different
@@ -58,7 +64,9 @@ STLcdBacklightGreen = 0x2727;
 STLcdBacklightBlue  = 0x1FA0;
 ```
 
-![](miami_result.jpg)
+![](ergdox_photo_1.jpg)
+
+![](ergdox_photo_2.jpg)
 
 ## To Do
 
