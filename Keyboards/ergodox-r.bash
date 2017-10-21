@@ -13,7 +13,7 @@
 
 # Feel free to change the variables in this section to configure your keyboard
 
-BuildPath="ICED-R"
+BuildPath="miami_ergodox_r"
 
 ## KLL Configuration ##
 
@@ -23,7 +23,7 @@ BaseMap="scancode_map rightHand slave1 leftHand"
 # This is the default layer of the keyboard
 # NOTE: To combine kll files into a single layout, separate them by spaces
 # e.g.  DefaultMap="mylayout mylayoutmod"
-DefaultMap="infinity_ergodox/mdergo1Overlay infinity_ergodox/lcdFuncMap"
+DefaultMap="mine/MDErgo1-Default-0 mine/ergodox_miami_logo_lcd mine/lcdFuncMap"
 
 # This is where you set the additional layers
 # NOTE: Indexing starts at 1
@@ -31,10 +31,7 @@ DefaultMap="infinity_ergodox/mdergo1Overlay infinity_ergodox/lcdFuncMap"
 # e.g.  PartialMaps[1]="layer1 layer1mod"
 #       PartialMaps[2]="layer2"
 #       PartialMaps[3]="layer3"
-PartialMaps[1]="infinity_ergodox/iced_func"
-PartialMaps[2]="infinity_ergodox/iced_numpad"
-
-
+PartialMaps[1]="mine/MDErgo1-Default-1 mine/lcdFuncMap"
 
 ##########################
 # Advanced Configuration #
@@ -65,10 +62,10 @@ Compiler="gcc"
 # Shouldn't need to touch this section
 
 # Check if the library can be found
-if [ ! -f "${BASH_SOURCE%/*}/cmake.bash" ]; then
-	echo "ERROR: Cannot find 'cmake.bash'"
-	exit 1
-fi
+# if [ ! -f "${BASH_SOURCE%/*}/cmake.bash" ]; then
+# 	echo "ERROR: Cannot find 'cmake.bash'"
+# 	exit 1
+# fi
 
 # Load the library
-source "${BASH_SOURCE%/*}/cmake.bash"
+source "cmake.bash"
