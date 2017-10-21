@@ -4,7 +4,7 @@ The Kiibohd Controller
 Version with miami title in bitmap :
 
 Image before being converted to bmp and converted to code :
-![img](miami.jpg)
+![img](miami.png)
 
 After from project folder : `python3 Scan/Devices/STLcd/bitmap2Struct.py -f miami.bmp`
 
@@ -32,7 +32,7 @@ Run the bash script `bash ergodox-r.bash` from `Keyboards` folder then `bash erg
 Enjoy
 
 * More help: https://github.com/kiibohd/controller/tree/master/Keyboards#example-usage
-* Protip : If you have issues with running cmake try to disable additionnal layers. Check : https://github.com/kiibohd/controller/issues/226
+* Protip : If you have issues with running cmake try to disable additional layers. Check : https://github.com/kiibohd/controller/issues/226
 * Also I always destroy previous generated bin `rm -rf darwin16.miami_ergodox_r.gcc.make && bash ergodox-r.bash` for example.
 * The color is changed in lcdFuncMap.kll by adding on the top:
 ```
@@ -42,3 +42,7 @@ STLcdBacklightBlue  = 0x1FA0;
 ```
 
 ![](miami_result.jpg)
+
+## To Do
+
+- [ ] Reduce brightness
